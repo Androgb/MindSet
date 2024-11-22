@@ -1,1 +1,1 @@
-##MindSet Project
+# MindSet Project
