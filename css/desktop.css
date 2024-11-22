@@ -1,0 +1,122 @@
+/*global*/
+:root{
+    /*fonts*/
+    --sm:1.7rem;
+    --m:2.2rem;
+    --l:3.2rem;
+    --xl: 5rem;
+}
+html{
+    background-image: url(../assets/img/bgDesktop.png);
+    background-position: top -11.2rem left -14.6rem;
+    background-attachment: fixed;
+    background-repeat: initial;
+}
+/*header*/
+.nav{
+    margin: 34px auto 0;
+}
+    .nav svg{
+        display: none;
+    }
+    .nav__txt{
+        display: flex;
+        font-size: var(--sm);
+    }
+/*main*/
+.container{
+    align-items: center;
+}
+    /*hero*/
+    .hero__title--container{
+        width: 90%;
+    }
+    .hero__title--container button{
+        width: 40%;
+        padding: 20px;
+    }
+            /*hero layout*/
+            .hero__layout{
+                display: grid;
+                grid-template-columns: 210px 20px 220px;
+                grid-template-rows: 40px 300px 20px 100px 40px;
+                width: 80%;
+                place-content: end;
+            }
+    /*benefits*/
+    #benefits{
+        align-items: end;
+        justify-content: end;
+        flex-direction: row;
+        margin: 180px 0 100px;
+        height: 470px;
+        width: 100%;
+        min-width: 788px;
+        justify-content: center;
+    }
+            /*Benefits img*/
+            .benefits__img{
+                top: 38px;
+                left: 0px;
+                position:relative;
+                width: 60%;
+                min-width: 500px;
+            }
+            /*Benefits txt*/
+            .benefits__txt--container{
+                margin-top: 0px;
+                width: 300px;
+                min-width: 300px;
+                height: 300px;
+                text-align: start;
+            }
+    /*feature item*/
+    .feature__item span{
+        width:430px;
+    }
+    /*feature cap*/
+    .feature__cap img {
+        width: 70%;
+    }
+    /*plans*/
+    .plans{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+        /*plans cards*/
+        .plans__card{
+            flex: 1 1 calc(33.3% - 2rem);
+            max-width: calc(33.3% - 2rem);
+        }
+/*Footer*/
+.foot{
+    padding: 0;
+}
+    /*foot contain*/
+    .foot__container{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 50px 0;
+        min-width: 765px;
+        width: 75%;
+    }
+    .foot div img{
+        height: 35px;
+    }
+    .foot div{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        min-width: 500px;
+    }
+    .foot__txt{
+        width: 60%;
+        max-width: 300px;
+        margin: 0;
+    }
+    .foot__sm{
+        width: 10%;
+        margin: 20px 0;
+    }

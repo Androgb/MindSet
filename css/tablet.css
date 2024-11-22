@@ -1,0 +1,104 @@
+/*global*/
+html{
+    background-image: url(../assets/img/bgTablet.png);
+    background-position: top -11.2rem left -25.4rem;
+    background-repeat: no-repeat;
+}
+/*header*/
+.nav img{
+    width: 200px;
+}
+.nav__txt a{
+    text-decoration: none;
+    color: var(--black);
+}
+/*main*/
+.container{
+    width: 77%;
+}
+    /*hero*/
+    .hero__title--container{
+        text-align: start;
+    }
+ 
+        /*hero layout*/
+        .hero__layout{
+            display: grid;
+            grid-template-columns: 150px 20px 150px;
+            grid-template-rows: 20px 230px 20px 80px 20px;
+            width: 80%;
+            place-content: end;
+        }
+        /*elements*/
+        .hero__layout--element{
+            border-radius: 10px;
+            box-shadow: -8px 13px 93px -6px rgba(0,0,0,0.34);
+        }
+        .hero__layout--element1{
+            background: url('../assets/img/graphicHero.png');
+            background-color: var(--white);
+            background-position: center;
+            background-size: cover;
+            grid-row: 2/3;
+        }
+        .hero__layout--element2{
+            background: url('../assets/img/imgHero.png');
+            background-color: var(--black);
+            background-size: cover;
+            grid-column: 3/4;
+            grid-row: 1/5;
+        }
+        .hero__layout--element3{
+            background: url('../assets/img/a.png');
+            background-position: center;
+            background-size: cover;
+            grid-row: 4/6;
+        }
+    /*benefits*/
+        /*benefits img*/
+        .benefits__img{
+            left: calc(50% - 150px);
+            top: -175px;
+            width: 300px;
+        }
+        /*Benefits txt*/
+        .benefits__txt--container{
+            margin-top: 120px;
+            min-height: 22rem;
+        }
+    /*feature item*/
+    .feature__item{
+        flex: 1 1 calc(50% - 3rem);
+        max-width: calc(50% - 3rem);
+    }
+    /*feature cap*/
+    .feature__cap img{
+        width: 50%;
+    }
+    .feature__cap--container{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        width: 100%;
+    }
+    /*plans*/
+    .plans__card{
+        padding: 30px 10px;
+    }
+    .plans__card--title{
+        font-size: var(--l);
+    } 
+/*Footer*/
+.foot{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 50px 20px;
+  }
+    /*foot contain*/
+    .foot__txt{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .foot__sm{
+        width: 20%;
+    }

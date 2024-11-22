@@ -1,0 +1,92 @@
+/*main*/
+.container{
+    margin: 20px auto 66px;
+}
+/*menu mobile*/
+.menu{
+    padding: 0 40px;
+    height: 6.6rem;
+}
+    /*menu mobile item*/
+    .menu__item{
+        width: 13.7rem;
+    }
+    .menu__item p{
+        display: block;
+        margin-top: 8px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--beige);
+    }
+    .menu__item.first svg{
+        width: 12px;
+        height: 12px;
+    }
+    .menu__item.first p{
+        color: var(--black);
+    }
+    /*cards*/
+    .card__dash--container{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .article.card__dash{
+        min-height: 12rem;
+    }
+    /*pots*/
+    .article .pots__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .article .pots{
+        width:52%
+    }
+    .article .pots__last{
+        width: 45%;
+        border-left: 4px var(--dark-blue) solid;
+        border-radius: 3px;
+    }
+
+/*GOALS*/
+.card__summary--container{
+    display: flex;
+    gap: 3%;
+}
+.card__summary--container .article.first{
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+/*Form*/
+.form__goal--container{
+    max-height: 60rem;
+    height: 55rem;
+    overflow-y: hidden;
+}
+.form__goal .form__goal--head,.form__goal .form__goal--body,.form__goal .form__goal--foot{
+    flex-direction: row;
+}
+.form__goal .form__goal--body label{
+    width: 50%;
+}
+.form__goal .form__goal--body label.file{
+    width: 100%;
+}
+.form__goal div section{
+    width:50%;
+}
+label{
+    width: 100%;
+}
+/*body*/
+textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 11rem;
+    max-height: 11rem;
+}
+

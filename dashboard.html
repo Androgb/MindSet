@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styleApp.css" type="text/css">
+    <link rel="stylesheet" href="./css/tabletApp.css" media="(min-width:768px)">
+    <link rel="stylesheet" href="./css/desktopApp.css" media="(min-width:1024px)">
+    <!--FAV ICON-->
+    <link rel="icon" href="./assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <!-- title -->
+    <title>MindSet | Dashboard</title>
+</head>
+<body>
+<!-- Menu -->
+<section class="menu">
+    <ul class="menu__container">
+        <img class="logo" src="assets/img/logo.png" alt="Logo MindSet">
+        <a href="dashboard.html" class="first">
+            <li class="menu__item first">
+                <svg class="icon-blue" >
+                    <use xlink:href="assets/icons/sprite.svg#home"></use>
+                </svg>
+                <p>Dashboard</p></li>
+        </a>
+        <a href="goals.html">
+            <li class="menu__item">
+                <svg class="icon" >
+                    <use xlink:href="assets/icons/sprite.svg#goals"></use>
+                </svg>
+                <p>Goals</p></li>
+        </a>
+        <a href="#">
+            <li class="menu__item">
+                <svg class="icon" >
+                    <use xlink:href="assets/icons/sprite.svg#to-do-list"></use>
+                </svg>
+                <p>To-do list</p></li>
+        </a>
+        <a href="#">
+            <li class="menu__item">
+                <svg class="icon" >
+                    <use xlink:href="assets/icons/sprite.svg#habits"></use>
+                </svg>
+                <p>Habits</p></li>
+        </a>
+        <a href="#">
+            <li class="menu__item">
+                <svg class="icon" >
+                    <use xlink:href="assets/icons/sprite.svg#finance"></use>
+                </svg>
+                <p>Finanzas</p></li>
+        </a>
+        <a href="#">
+            <li class="menu__item">
+                <svg class="icon" >
+                    <use xlink:href="assets/icons/sprite.svg#daily"></use>
+                </svg>
+                <p>Daily</p></li>
+        </a>
+        <!-- Salir -->
+        <a class="exit" href="#">
+            <li class="menu__item close">
+                <svg class="icon" >
+                    <use xlink:href="assets/icons/sprite.svg#double-arrow-right"></use>
+                </svg>
+               <p>
+                   Minimize Menu
+               </p> 
+            </li>
+        </a>
+    </ul>
+</section>  
+    
+    <!-- main -->
+    <main class="container">
+             
+        <!--Header-->
+        <header class="nav">
+            <section class="nav__links">
+                <div class="nav__links--title">
+                    <!-- <a href="#"><p>Pages / Dashboard</p></a> -->
+                    <h1>Dashboard</h1>
+                </div>
+            </section>
+            <section class="nav__user">
+                <img src="" alt="">
+                <p>AndroGB</p>
+            </section>
+        </header>
+        <section class="card__dash--container">
+            <article class="article card__dash first">
+                <p>Current Balance</p>
+                <h2>$200.00</h2>
+            </article>
+            <article class="article card__dash">
+                <p>Income</p>
+                <h2>$200.00</h2>
+            </article>
+            <article class="article card__dash">
+                <p>Expenses</p>
+                <h2>$0.00</h2>
+            </article>
+        </section>
+        <section class="layout">
+            <article class="article">
+                <div class="article__details"><h3>Pots</h3>
+                    <p>See Details 
+                        <svg class="icon" >
+                            <use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+                          </svg>
+                    </p></div>
+                <div class="pots__container">
+                    <div class="pots">
+                        <div>
+                            <svg class="pots__img" >
+                                <use xlink:href="assets/icons/sprite.svg#finance"></use>
+                              </svg>
+                        </div>
+                        <div class="pots__txt">
+                            <p>Pots</p><h2>$0</h2>
+                        </div>
+                    </div>
+                    <div class="pots__last"><p>asd</p><h2>$0</h2></div>
+                </div>
+            </article>
+            <article class="article trans">
+                <div class="article__details"><h3>Transactions</h3><p>See Details 
+                    <svg class="icon" >
+                        <use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </p>
+                </div>
+                <div class="transactions">
+                    <div class="transactions__img--container">
+                        <svg>
+                            <use xlink:href="assets/icons/sprite.svg#daily"></use>
+                          </svg>
+                        <b>Alejandro Giron</b>
+                    </div>
+                    <div class="transactions__txt--container">
+                        <p>+$200.00</p>
+                        <p>22 Nov 2024</p>
+                    </div>
+                </div>
+            </article>
+            <article class="article carousel">
+                <div class="article__details carousel"><b></b>
+                    <p>
+                        <svg class="icon" >
+                            <use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+                          </svg>
+                          <svg class="icon" >
+                            <use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+                          </svg>
+                    </p>
+                </div>
+                <div class="carousel__txt--container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, unde!</p>
+                </div>
+            </article>
+            <article class="article to-do-list">
+                <div class="article__details"><h3>To-do List</h3>
+                    <p>See Details
+                        <svg class="icon" >
+                            <use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

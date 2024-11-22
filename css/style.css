@@ -1,0 +1,314 @@
+/*
+1. Posicionamiento
+2. Modelo de Caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+/* global */
+:root{
+    /*light mode*/
+    --white: #fff;
+    --light-white: #f6f0e7;
+    --light-beige:#d5cfbf;
+    --beige:#9ca0a1;
+    --black:#1f232c;
+    /*dark mode*/
+    --dark-white: #dfd6d1;
+    --dark-blue:#4b988a;
+    --dark:#6d6f73;
+    /*fonts*/
+    --sm:1.4rem;
+    --m:1.7rem;
+    --l:3.2rem;
+    --xl: 4rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%; 
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+    background: var(--light-white);
+    background-image: url(../assets/img/bgMobile.png);
+    background-color: #fcfaf9;
+    background-position: top -10.4rem left 0;
+}
+button{
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+}
+.icon{
+    fill: var(--beige);
+    width: 14px;
+    height: 14px;
+}
+.icon-blue{
+    fill: var(--dark-blue);
+    width: 12px;
+    height: 12px;
+}
+.icon-white{
+    fill: var(--white);
+    width: 12px;
+    height: 12px;
+}
+/*Landing Page*/
+/*header*/
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 0 0 ;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.07cm;
+}
+.nav svg{
+    fill: var(--black);
+    width: 40px;
+    height: 25px;
+}
+.nav__logo img{
+    width: 100px;
+}
+.nav__txt{
+    display: none;
+    gap: 6rem;
+}
+/*main*/
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.container section{
+    min-height: 70vh;
+    margin: 4rem 0;
+}
+    /*hero*/
+    .container .hero{
+        margin: 0 0 20px;
+    }
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+    }
+    .hero__layout{
+        display: none;
+    }
+    .hero__title--container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 24px 0 0;
+        text-align: center;
+    }
+    .hero__title--container h1{
+        font-size: var(--xl);
+        line-height: 4.5rem;
+    }
+    .hero__title--container p{
+        font-size: var(--m);
+        line-height: 2.6rem;
+        color: var(--dark);
+    }
+    .hero__title--container button{
+        background: var(--black);
+    }
+    /*Benefits section*/
+    .container .benefits{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 250px 0 100px;
+        padding: 40px;
+        border-radius: 10px;
+        background-image: url('../assets/img/bgPlanRecommended.png');
+        background-color: var(--black);
+        background-attachment: fixed;
+    }
+    /*Benefits img*/
+    .benefits__img{
+        position: absolute;
+        top: -150px;
+        left: calc(50% - 100px);
+        width: 200px;
+    }
+    /*Benefits txt*/
+    .benefits__txt--container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        min-height: 35rem;
+        text-align: center;
+        color: var(--white);
+    }
+        .benefits__txt--container h2{
+            font-weight: 500;
+            font-size: var(--l);
+        }
+        .benefits__txt--container p{
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+        .benefits__txt--container h3{
+            font-size: var(--m);
+            font-weight: 500;
+        }
+    /*features*/
+    .features{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background: url('../assets/img/bgPlanRecommended.png');
+        background-attachment: fixed;
+        text-align: center;
+        color: var(--white);
+    }
+    .features p{
+        margin-bottom: 40px;
+        font-size: var(--m);
+    }
+    .feature__list{
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+        /*feature item*/
+        .feature__item{
+            display: flex;
+            text-align: start;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+        }
+            .feature__item svg{
+                width: 50px;
+                height: 35px;
+                margin-right: 20px;
+            }
+            .feature__item span{
+                width:230px;
+            }
+            .feature__item span h2{
+                font-size: var(--m);
+            }
+            .feature__item span p{
+                font-size: var(--sm);
+                margin: 10px 0;
+            }
+    /*feature cap*/
+    .container .feature__cap{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 110px 0 0;
+    }
+    .feature__cap img{
+        width: 100%;
+        box-shadow: 32px 21px 94px -57px rgba(0,0,0,0.75);
+        margin: 20px 0;
+    }
+    .feature__cap--title--container{
+        font-size: var(--m);
+    }
+    /*plans*/
+    .plans{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+        /*plans cards*/
+        .plans__card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            width: 100%;
+            height: 430px;
+            border-radius: 10px;
+            background: var(--white);
+            text-align: center;
+        }
+        .plans__card.recommended{
+            height: 510px;
+            background-image: url('../assets/img/bgPlanRecommended.png');
+            background-attachment: fixed;
+            color: var(--white);
+        }
+            .plans__card.recommended .plans__card--txt{
+                color: var(--beige);
+            }
+            /*title*/
+            .plans__card--title{
+                font-size: var(--xl);
+            }
+            /*body*/
+            .plans__card--body h1{
+                font-size: var(--xl);
+            }
+            .plans__card--body{
+                font-size: var(--m);
+            }
+            /*txt*/
+            .plans__card--txt{
+                font-size: var(--sm);
+                color: var(--dark);
+            }
+            /*button*/
+            .plans__card button{
+                width: 50%;
+                background: var(--dark-blue);
+            }
+/*footer*/
+.foot{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    min-width: 320px;
+    background-image: url('../assets/img/bgPlanRecommended.png');
+    background-color: var(--black);
+    background-attachment: fixed;
+    color: var(--light-white);
+  }
+        /*foot contain*/
+        .foot div img{
+            width: 150px;
+        }
+        .foot__txt{
+            margin-top: 36px;
+            font-size: 1.6rem;
+        }
+        .foot__sm{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            width: 40%;
+        }
+        .foot__sm a svg{
+            width: 20px;
+            height: 20px;
+        }
+        .foot__sm a svg:hover{
+            fill:var(--dark-blue);
+        }
